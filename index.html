@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FF League</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #0a0e17;
+      color: #e8e8e8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      background-image: 
+        radial-gradient(ellipse at 20% 0%, rgba(114, 9, 183, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 100%, rgba(0, 245, 212, 0.1) 0%, transparent 50%);
+    }
+
+    .logo { font-size: 100px; margin-bottom: 20px; }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(60px, 15vw, 100px);
+      letter-spacing: 8px;
+      background: linear-gradient(135deg, #ffd700 0%, #fff 50%, #ffd700 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      color: #00f5d4;
+      letter-spacing: 4px;
+      margin-top: 10px;
+      margin-bottom: 60px;
+    }
+
+    .seasons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .season-card {
+      background: #12182b;
+      border: 2px solid rgba(255, 215, 0, 0.3);
+      border-radius: 20px;
+      padding: 40px 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .season-card:hover {
+      border-color: #ffd700;
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+    }
+
+    .season-card .year {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 48px;
+      color: #ffd700;
+      letter-spacing: 4px;
+    }
+
+    .season-card .label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #8892b0;
+      letter-spacing: 2px;
+      margin-top: 8px;
+    }
+
+    .season-card .champion {
+      font-size: 14px;
+      color: #00f5d4;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">🏈</div>
+  <h1>FF LEAGUE</h1>
+  <p class="subtitle">SEASON ARCHIVES</p>
+  
+  <div class="seasons">
+    <a href="./2025/" class="season-card">
+      <div class="year">2025</div>
+      <div class="label">END OF SEASON REPORT</div>
+      <div class="champion">🏆 masterwu</div>
+    </a>
+    <!-- Future seasons will be added here -->
+  </div>
+</body>
+</html>
